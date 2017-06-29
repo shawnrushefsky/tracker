@@ -9,6 +9,7 @@ To build:
 ```shell
 git clone https://github.com/shawnrushefsky/tracker.git
 cd tracker
+npm install
 ember build
 sudo node server
 ```
