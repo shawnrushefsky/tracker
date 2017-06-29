@@ -1,0 +1,5 @@
+{{#each model as |blNum|}}
+{{#search-field value=blNum as |data|}}
+  {{track-result data=data}}
+{{/search-field}}
+{{/each}}

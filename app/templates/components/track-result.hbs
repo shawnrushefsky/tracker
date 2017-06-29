@@ -1,0 +1,16 @@
+<div class='shipmentinfo'>
+  <p>Share this booking: <a href={{data.url}}>{{data.url}}</a></p>
+  <h3>B/L Number: <b>{{data.blNumber}}</b></h3>
+  <p><b>Steamship Line:</b> {{data.steamLine}}</p>
+  <p><b>Origin:</b> {{data.Origin}}</p>
+  <p><b>Destination:</b> {{data.Destination}}</p>
+  <p><b>Vessel:</b> {{data.Vessel}}</p>
+  <p><b>Voyage:</b> {{data.Voyage}}</p>
+  <p><b>Vessel ETA:</b> {{data.VesselETA}}</p><br>
+  <p><b>Containers: {{data.Containers.length}}</b></p>
+  <ul>
+    {{#each data.Containers as |crate|}}
+      <li>{{container-info crate=crate}}</li>
+    {{/each}}
+  </ul>
+</div>
